@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Green Gaurdian</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" href="./Images/icon.png">
+        <link rel="stylesheet" href="forhomepage.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Banner Section -->
+        <div id="banner">
+            <video autoplay muted loop id="videobanner">
+                <source src="./Videos/BannerVideo.mp4" type="video/mp4">
+            </video>
+            <div id="bannerblock"></div>
+            <div id="ndbanner">
+                <h2><span style="color:rgb(84, 175, 111);font-family:Poppins;">GREEN GAURDIAN</span> — Công nghệ vì môi trường xanh</h2>
+                <p>Dự án ứng dụng AI để hỗ trợ nhận diện ô nhiễm, tư vấn bảo vệ môi trường và lan tỏa trách nhiệm sống xanh đến cộng đồng</p>
+                <a id="Khampha" href="#AInhandienracthai">Khám phá</a>
+            </div>
+            <!-- Navigation Bar -->
+            <nav id="thanhdieuhuong">
+                <a id="logo" href="Homepage.html">
+                    <img src="./Images/logo.png" alt="Logo">
+                </a>
+                <div id="menu1" class="menu">
+                    <a id="tdhkienthuc" href="./ThanhDieuHuong/Knowledge.html">Kiến Thức</a>
+                    <a id="tdhduan" href="./ThanhDieuHuong/Project.html">Dự Án</a>
+                    <a id="tdhvechungtoi" href="./ThanhDieuHuong/AboutUs.html">Về Chúng Tôi</a>
+                    <a id="tdhlienhe" href="#contact_container">Liên hệ</a>
+                </div>            
+            </nav>
+        </div>   
+        <div id="underbanner"></div>
+        <!-- AI Waste Recognition Section -->
+        <div id="AInhandienracthai">
+            <div id="khungsubmitanh">
+                <p id="greentechnology">Green Technology</p>
+                <h1> <span style="color:rgb(89, 187, 119);font-family:Poppins;">GREEN GAURDIAN </span> -<br> AI <span style="color:green;">Nhận Diện</span> Rác Thải</h1>
+                <p id="mota">Trí tuệ nhân tạo giúp nhận diện và phân loại rác thải nhanh chóng, chính xác, góp phần nâng cao hiệu quả tái chế và bảo vệ môi trường.</p>
+                <div id="designchonanh">
+                    <input type="file" id="imageUpload" accept="image/*" hidden>
+                    <button id="chonanh" onclick="document.getElementById('imageUpload').click()">
+                        Chọn ảnh
+                    </button>
+                    <p id="fileInfo">Chưa có ảnh nào được tải lên</p>
+                </div>
+                <div id="underchonanh"></div>
+                <button id="nutnhandien">Nhận Diện</button>
+            </div>
+            <div id="khungpreviewanh">
+                <p id="previewText">Preview Image</p>
+                <img id="previewImage" src="#" alt="Preview Image" style="display:none;"/>
+            </div>
+        </div>
+        <div id="ketquanhandien">
+            <div id="phiatrenketqua"></div>
+            <div id="ketqua">
+                <p>Sau khi đã phân tích kỉ hình ảnh của bạn gửi lên, AI cho ra kết quả đó là <span id="thongbaoketqua"> ...</span> </p>
+                <p>Để góp phần <span style="color:green;text-transform:uppercase">bảo vệ môi trường</span> phía dưới là một số biện pháp tái chế phù hợp với loại rác</p>
+            </div>
+            <h3><span style="color:black">Recommended</span> Solutions <span style="color:black">to</span> Recycle</h3>
+            <div id="solution">
+                <div id="khungsolu1" class="solu">
+                    <img id="icon1" src="./Images/iconenvironment.jpg" class="iconsolu" display>
+                    <h6 id="solution1" class="titlesolu">Solution 1</h6>
+                    <p id="motasolu1" class="discriptionforsolution">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                </div>
+                <div id="khungsolu2" class="solu">
+                    <img id="icon2" src="./Images/iconenvironment.jpg" class="iconsolu" display>
+                    <h6 id="solution2" class="titlesolu">Solution 2</h6>
+                    <p id="motasolu2" class="discriptionforsolution">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                </div>
+                <div id="khungsolu3" class="solu">
+                    <img id="icon3" src="./Images/iconenvironment.jpg" class="iconsolu" display>
+                    <h6 id="solution3" class="titlesolu">Solution 3</h6>
+                    <p id="motasolu3" class="discriptionforsolution">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                </div>
+            </div>
+            <h5><em>🌱 “Green Guardian – Thức tỉnh ý thức, kiến tạo một thế giới xanh.”</em></h5>
+        </div>
+        <!-- Contact Section -->
+        <div id="contact_container">
+            <h1>Liên Hệ Cho Chúng Tôi Thông Qua</h1>
+            <div id="ct_scontainer">
+                <img id="spimage"src="./Images/spimage.jpg">
+                <div id="ct_box">
+                    <div id="ct_sbox1">
+                        <img src="./Images/fbicon.png">
+                        <p><span style="color:rgb(20, 85, 40);text-decoration: underline;">Fanpage:</span> Green Gaurdian <br><a href="https://www.facebook.com/profile.php?id=61588375301201">Fanpage chính chủ của chúng tôi</a></p>
+                    </div>
+                    <div id="ct_sbox2">
+                        <img src="./Images/messicon.png">
+                        <p><span style="color:rgb(20, 85, 40);text-decoration: underline;">Messenger:</span> LMH Institute <br><a href="https://m.me/1056784580841001">Nhắn tin để nhận tư vấn trực tiếp</a></p>
+                    </div>
+                    <div id="ct_sbox3">
+                        <img src="./Images/hotlineicon.png">
+                        <p><span style="color:rgb(20, 85, 40);text-decoration: underline;">Hotline:</span> 0374 050 827 <br><span style="color:black;font-family:sans-serif;">Gọi điện để đưọc hổ trợ trực tiếp</span></p>
+                    </div>
+                    <div id="ct_sbox4">
+                        <img src="./Images/emailicon.png">
+                        <p><span style="color:rgb(20, 85, 40);text-decoration: underline;">Email:</span> avpgreengaurdian@gmail.com <br> <a href="mailto:avpgreengaurdian@gmail.com">Nhắn tin qua Email sẽ được phản hồi ngay lập tức</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <div id="ft_container1">        
+                <div id="ft_box1">
+                    <img src="./Images/logo.png">
+                    <p style="margin-top:5%;">Một sản phẩm thuộc nhóm AVP Green Gaurdians Green Gaurdian - www.GreenGaurdian.com</p>
+                    <p>Trụ Sở: <span style="font-family:sans-serif;">Lạc Tân 3, Xã Cà Ná, Tỉnh Khánh Hòa</span></p>
+                    <p>Inbox:<a style="color:rgb(20, 85, 40)" href="https://m.me/1056784580841001"> https://m.me/1056784580841001</a> </p>
+                    <p>Email: <span style="font-family:sans-serif;">avpgreengaurdian@gmail.com</span></p>
+                </div>
+                <div id="ft_box2">
+                    <h3>Về Green Gaurdian</h3>
+                    <a href="./ThanhDieuHuong/Knowledge.html">Kiến Thức</a>
+                    <a href="./ThanhDieuHuong/Project.html">Dự Án</a>
+                    <div></div>
+                </div>
+            </div>
+            <div id="ft_container2">
+                <div id="ft_box3">
+                    <p>Theo dõi Green Gaurdian tại:</p>
+                    <a href="https://www.facebook.com/profile.php?id=61588375301201"><img src="./Images/fbicon.png"></a>
+                </div>
+            </div>
+            <div id="ft_container3">
+                <div id="ehh"></div>
+                <div id="ft_box4">
+                    <p><a href="./footer/aboutweb.html#ab_container">Giới Thiệu</a> | <a href="./footer/aboutweb.html#pr_container">Chính Sách Bảo Mật</a> | <a href="./footer/aboutweb.html#te_container">Điều Khoản Sử Dụng</a></p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+        <script src="AInhandienracthai.js"></script>
+        <!-- Chatbot Integration -->
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger
+                intent="WELCOME"
+                chat-icon="./Images/chatboticon.png"
+                chat-title="Green Gaurdian Assistant"
+                agent-id="86ecd714-e905-4c5b-af70-4e15036395f9"
+                language-code="vi"
+            ></df-messenger>
+    </body>
+</html>
